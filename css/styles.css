@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+/* ================================= 
+  Main Elements
+==================================== */
+body {
+    background-color: rgba(248, 248, 248, 0.733);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(10, 43, 61);
+    color: white;
+    padding: 30px;
+    margin-top: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header h2, header p {
+    text-align: center;
+    width: 60%; 
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: rgb(10, 43, 61);
+    width: 100%;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+fieldset {
+    border:none;
+    color: rgb(10, 43, 61);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+div {
+    align-content: center;
+}
+
+.second_line {
+    border-top: 2px solid rgb(10, 43, 61);
+    width: 90%;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+label {
+    margin: 10px;
+    color: rgb(109, 109, 109);
+}
+
+
+.input {
+    padding: 15px;
+    width: 95%;
+    margin: 10px;
+    border-radius: 5px;
+    border: solid black 1px;
+    transition: background-color 1s;
+}
+
+#zip_code {
+    width: 34%;
+}
+
+input:focus {
+    background-color: rgb(240, 239, 239);
+    border: rgb(10, 43, 61);
+    border-width: 20px;
+}
+
+.input:hover {
+    background-color: rgb(240, 239, 239);
+}
+
+input[required] {
+    font-style: italic;
+    text-align: right;
+}
+
+.check {
+    margin: 20px;
+}
+
+.textarea {
+    padding: 30px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.button {
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(10, 43, 61);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    color: rgb(10, 43, 61);
+    text-align: center;
+    margin: 30px;
+}
+
+/* ================================= 
+  Other Styles
+==================================== */
+
+.top_line {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double rgb(10, 43, 61);
+    color: rgb(10, 43, 61);
+    text-align: center;
+}
+.top_line:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: rgba(248, 248, 248, 0.733);
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+
+ .second_line {
+    width: 50%; 
+}
+
+.top_line {
+    width: 50%;
+}
+
+.button {
+    width: 70%;
+}
+
+fieldset {
+    width: 70%;
+}
+
+.flex-form {
+    display: flex;
+    text-align: left;
+}
+
+.input {
+    flex-grow: 1;
+    flex-basis: 5px;
+    justify-content: end;
+    max-width: 70%;
+}
+
+label {
+    display: inline-block;
+    text-align: left;
+    margin: auto auto auto 0
+}
+
+}
